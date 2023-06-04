@@ -1,0 +1,6 @@
+services:
+  server:
+    build: server
+    ports: 
+      - "8000:3000"
+    command: bash -c "node src/deploy-commands.js && node src/server.js"

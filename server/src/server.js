@@ -6,14 +6,12 @@ const express = require('express');
 const http = require('http');
 
 const app = express();
-const port = 8080;
+const port = 3000;
 
 // ROUTERS
 // CALL ROUTES
-const dummyRoutes = require("./routes/dummy");
 
 // INITIATE ROUTERS
-app.use('/', dummyRoutes); // USES THE DUMMY.JS ROUTE WHEN HOSTNAME:8080/DUMMY/ IS REQUESTED
 
 http.createServer(app).listen(port, () => {
   console.log(`ThePlaygroundBot is listening on port ${port}`);
@@ -25,7 +23,7 @@ require('dotenv').config({path:'./src/configs/.env'});
 // CONFIGURE AND DEPLOY THE DISCORD BOT
 
 // CONFIGURE AND SET UP SLASH COMMANDS
-const {Client, GatewayIntentBits, Events, Collection} = require('discord.js');
+const {Client, GatewayIntentBits, Collection} = require('discord.js');
 const fs = require('node:fs'); // fs is used to read the commands directory and identify our command files.
 const path = require('node:path'); // path helps construct paths to access files and directories
 

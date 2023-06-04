@@ -20,15 +20,6 @@ module.exports = {
     async execute(interaction) {
 
         // PARSE JSON THAT IS THE ROLE SELECTION MENU MESSAGE
-        interaction.isButton
-
-        console.log(interaction.client.user);
-        console.log(interaction.guild);
-        console.log(interaction.user);
-
-        console.log(interaction.options.get('message'));
-        console.log(interaction.options.get('roles'));
-        console.log(interaction.options.get('channel'));
 
         // await interaction.reply();
 

@@ -1,4 +1,4 @@
-const { Guild, Role } = require('discord.js');
+const { Guild } = require('discord.js');
 
 /**
  * Creates one or many roles
@@ -24,7 +24,8 @@ function createRoles(roles,guild) {
                 });
             } catch (error) {
                 console.error(`Unable to create role ${roles[i]}`);
-                console.error(error);            }
+                console.error(error);            
+            }
         }
     }
 }

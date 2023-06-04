@@ -1,6 +1,6 @@
 FROM node:16
 
-WORKDIR /usr/src/app/server
+WORKDIR /usr/app/server
 
 COPY package*.json ./
 
@@ -9,6 +9,3 @@ RUN npm install dotenv
 RUN npm install discord.js
 
 COPY . .
-
-# CMD ["node", "server.js"]
-

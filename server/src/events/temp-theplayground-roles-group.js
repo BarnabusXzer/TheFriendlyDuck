@@ -11,8 +11,7 @@ module.exports = {
         if (interaction.customId.slice(0,9) !== 'TFDRLBTN-') return;
 
         //THIS IS A TEMP FILE FOR THE-PLAYGROUND-SERVER SO I WILL JUST HARD CODE THE ROLE-GROUP HERE
-        // '1113713122373545984','1113713123782836285','1113713124588146688','1113713125280202752'
-        const roleGroup = ['1114034960085549087','1114034960370782239','1114034961339650129'];
+        const roleGroup = ['1113713122373545984','1113713123782836285','1113713124588146688','1113713125280202752'];
 
         try {
             const roleName = interaction.customId.substring(9);
